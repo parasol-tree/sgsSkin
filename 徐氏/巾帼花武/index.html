@@ -20,14 +20,6 @@
 
 <body>
     <script type="text/javascript">
-        var sec = localStorage.getItem('refresh')
-        if (!sec) {
-            localStorage.setItem('refresh')
-            location.reload()
-            return false
-        } else {
-            localStorage.removeItem('refresh')
-        }
         function loadLib(url) {
             var script = document.createElement("script");
             script.async = false;
@@ -39,3 +31,12 @@
 </body>
 
 </html>
+<script>
+    var sec = localStorage.getItem('refresh')
+    if (!sec) {
+        localStorage.setItem('refresh')
+        location.reload()
+    } else {
+        localStorage.removeItem('refresh')
+    }
+</script>
