@@ -34,7 +34,7 @@
 <script>
     var sec = localStorage.getItem('refresh')
     if (!sec) {
-        localStorage.setItem('refresh')
+        localStorage.setItem('refresh', 'refresh')
         location.reload()
     } else {
         localStorage.removeItem('refresh')
