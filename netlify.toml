@@ -1,0 +1,6 @@
+[[redirects]]
+  from = "/file/"
+  to = "https://sgsimg.netlify.app/file/"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
